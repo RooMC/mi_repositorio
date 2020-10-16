@@ -1,0 +1,362 @@
+/* Variables */
+@import "colores";
+@import "tipografia";
+@import "fondo";
+$altura: 500px;
+$ancho: 700px; 
+body{
+	margin: 10px;
+}
+.titulo{
+	h1{
+	color: $cool-verde;
+	font-family: $title-font;
+	font-size: 52px;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-align: center;
+	margin: 15px;
+	border: 15px;
+	justify-self: center;
+	align-self: center;
+	position: relative;
+	}
+	
+	#navbar {
+		display: grid;
+		grid-template-rows: 110px;
+		align-items: end; 
+		justify-items: end;
+		justify-content: end;
+		align-content: end;
+		.nav-item{
+			overflow: hidden;
+			color: $cool-verde;
+			text-align: right;
+			text-decoration: none;
+			font-size: 28px;
+			font-family: $nav-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
+	  	.nav-link{
+		  	color: $cool-verde;
+		  	font-family: $nav-font;
+		  	text-decoration: none;
+		  	text-transform: uppercase;
+	  	}
+		.navbar-nav a:hover {
+		  	background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+			background-size: 100%;
+			color: $cool-white;	
+			transition: 1s;
+			transform: scale(1.3);
+			color:$cool-verde;
+		}
+
+		.navbar-brand a.active {
+		  background-color: #0ba360;
+		  color: $cool-white;
+		}
+		.inicio{
+			padding: 15px;
+		   		font-size: 25px;
+		   		display: inline-block;
+		   		text-transform: uppercase;
+		   		text-align: right;
+		    	text-decoration: none;
+		   	    font-family: $nav-font;
+		    	color: $cool-verde;
+		   	
+		}
+		.bg-light {
+	   		background-color: $cool-fondo1;
+	   	}
+   	}
+  background-color: $cool-fondo1; 	
+}
+#productos{
+	.productos__titulo{
+		color: $cool-verde;
+		font-family: $subtitle-font;
+		font-size: 35px;
+		letter-spacing: 1.5px;	
+		&:hover{
+			background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+			background-size: 40%;
+			color: $cool-white;	
+			transition: 1s;
+			transform: scale(1.3);
+			color:$cool-white;
+			}	
+	}
+	.productos__verProductos{
+	color: $cool-white;
+	font-family: $parrafo-font;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border-style: groove;
+	border-color: white;
+	border-radius: 6px;
+	border-width:4px; 
+	/*background-image: linear-gradient(to top, #abecd6 0%, #fbed96 100%);*/
+	background-image: linear-gradient(to top, #FFFEFF 0%, #D7FFFE 100%);
+	padding: 10px;
+	margin: 10px;
+	justify-content: center;
+	animation-name: animate__rollIn;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+    animation-duration: 5s;
+    	@keyframes animate__rollIn{
+			  0% {
+			   	color: #11998e;
+			   }
+			   25%{
+			   color: #9be15d;
+			   }
+			   50% {
+			     color: #38ef7d;
+			   }
+			   100%{
+			   	color: #00e3ae;
+			   }
+			  }
+	}
+	.row1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+	.row2{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#carouselExampleControls{
+		justify-content: center;
+		justify-self: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+#quienessomos{
+	.quienessomos__titulo{
+		color: $cool-verde;
+		font-family: $subtitle-font;
+		font-size: 35px;
+		letter-spacing: 1.5px;
+		&:hover{
+			background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+			background-size: 100%;	
+			transition: 1s;
+			transform: scale(1.3);
+			color:$cool-white;
+		}
+	}
+	.quienessomos__parrafo{
+		font-family:$parrafo-font;
+		font-size: 20px;
+		letter-spacing: 1px;
+		color: $cool-black;		
+		height: ($altura/2)+20;
+		width: ($ancho/2);
+		text-align: justify;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin:10px;
+		border: 5px;	
+	}
+	.container-fluid{
+		background-color: $cool-fondo2;
+	}
+}
+#contacto{
+	.contacto__titulo{
+		color: $cool-verde;
+		font-family: $subtitle-font;
+		font-size: 35px;
+		letter-spacing: 1.5px;
+		&:hover{
+			background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+			background-size: 100%;	
+			transition: 1s;
+			transform: scale(1.3);
+			color:$cool-white;
+		}
+	}
+	.contacto__formulario{
+		font-family:$parrafo-font;
+		font-size: 20px;
+		letter-spacing: 1px;
+		color: $cool-black;		
+		
+		height: ($altura/2)-35;
+		width: ($ancho/2)+97;
+		text-align: justify;
+		font-style: italic;
+		padding-left: 15px;
+		padding-right: 10px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		border: 20px;
+		margin: 10px;
+	}
+	.container-fluid{
+	 background-color: $cool-fondo2;
+	}
+}
+.grid2{
+	display: grid;
+	grid-template-columns: 500px 500px;
+	grid-template-areas: "quienessomos contacto";
+	/*grid-template-rows: 600px;*/
+	grid-column-gap: 15px;
+	margin: 10px;
+	align-items: stretch;
+	justify-items: center;
+	justify-content: space-around;
+	align-content: space-evenly;
+
+	#quienessomos{
+		grid-area: quienessomos;
+		justify-self: stretch;
+		align-self: stretch;
+	}
+	#contacto{
+		grid-area: contacto;
+		justify-self: stretch;
+		align-self: stretch;
+	}
+}
+/*Animacion*/
+#animacion{
+	animation-name: parallax;
+	animation: parallax;
+	animation-iteration-count: 1;
+   	animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+@keyframes parallax{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#animacion3{
+	animation-name: parallax;
+	animation: parallax;
+	animation-iteration-count: 1;
+   	animation-timing-function: ease-in;
+   animation-duration: 3s;  
+}
+
+.footer{
+	background: $cool-fondo1;
+	background-size: 100% 100%;
+	margin: 10px!important;
+	ol li{
+		list-style: none;
+		list-style-position: outside;
+		color: white;
+		text-decoration: none;
+	}
+	.footer__estilo{
+		color: $cool-white;
+		font-weight: bold;
+		font-size: 22px;
+		letter-spacing: 1px;
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-top: 5px;		 
+	}
+	.footer__estilo2{
+		color: $cool-white;
+		font-family: $footer-fond;
+		font-size: 17px;
+		letter-spacing: 1px;
+		display: inline-block;
+		text-decoration: none;
+	}
+	div{
+	display: inline-block;
+	width: 30%;	
+	}
+}
+
+@mixin hover{
+	background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+	background-size: 100%;	
+	transition: 1s;
+	transform: scale(1.3);
+	@if ($cool-verde){
+		color:$cool-white;
+	}@else if ($cool-white){
+		color:$cool-black;
+	}
+}
+/*Pagina Productos*/
+#row3{
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+	align-content: baseline;
+	align-items: flex-center;
+	padding-right:10px;
+	padding-left: 5px;
+		#productosMasVendidos{
+			color: $cool-black;
+			font-family: $parrafo-font;
+			font-size: 30px;
+			border-style: ridge;
+			border-color: #34ebab;
+			border-width: 10px;
+			text-align: center;
+			line-height: none;
+			height: 550px !important;
+			width: 510px;
+			margin: 2px;
+			letter-spacing: 1px;
+			display: inline-block;
+			justify-content: center;
+			padding: 3px;
+		}
+		em{
+			color: black;
+			font-family: 'Roboto Slab', serif!important;
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+
+/*Pagina Quienes Somos*/
+.quienessomos2{
+
+	.quienessomos__parrafo2{
+		text-align: justify;
+		font-weight: normal;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: 200px;
+		width: 675px;
+		margin:10px;
+		border: 10px;
+		background: $cool-fondo2;
+	}	
+}
+#flexQS{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+/*Pagina Contacto*/

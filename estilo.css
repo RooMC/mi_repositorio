@@ -1,0 +1,303 @@
+/* Variables */
+body {
+  margin: 10px; }
+
+.titulo {
+  background-color: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); }
+  .titulo h1 {
+    color: #34ebab;
+    font-family: "Great Vibes", cursive;
+    font-size: 52px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    border: 15px;
+    justify-self: center;
+    align-self: center;
+    position: relative; }
+  .titulo #navbar {
+    display: grid;
+    grid-template-rows: 110px;
+    align-items: end;
+    justify-items: end;
+    justify-content: end;
+    align-content: end; }
+    .titulo #navbar .nav-item {
+      overflow: hidden;
+      color: #34ebab;
+      text-align: right;
+      text-decoration: none;
+      font-size: 28px;
+      font-family: bold "PT Serif", serif;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .titulo #navbar .nav-link {
+      color: #34ebab;
+      font-family: bold "PT Serif", serif;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .titulo #navbar .navbar-nav a:hover {
+      background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+      background-size: 100%;
+      color: #ffffff;
+      transition: 1s;
+      transform: scale(1.3);
+      color: #34ebab; }
+    .titulo #navbar .navbar-brand a.active {
+      background-color: #0ba360;
+      color: #ffffff; }
+    .titulo #navbar .inicio {
+      padding: 15px;
+      font-size: 25px;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: right;
+      text-decoration: none;
+      font-family: bold "PT Serif", serif;
+      color: #34ebab; }
+    .titulo #navbar .bg-light {
+      background-color: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); }
+
+#productos .productos__titulo {
+  color: #34ebab;
+  font-family: normal "PT Serif", serif;
+  font-size: 35px;
+  letter-spacing: 1.5px; }
+  #productos .productos__titulo:hover {
+    background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    background-size: 40%;
+    color: #ffffff;
+    transition: 1s;
+    transform: scale(1.3);
+    color: #ffffff; }
+
+#productos .productos__verProductos {
+  color: #ffffff;
+  font-family: normal "Roboto Slab", serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-style: groove;
+  border-color: white;
+  border-radius: 6px;
+  border-width: 4px;
+  /*background-image: linear-gradient(to top, #abecd6 0%, #fbed96 100%);*/
+  background-image: linear-gradient(to top, #FFFEFF 0%, #D7FFFE 100%);
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  animation-name: animate__rollIn;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s; }
+
+@keyframes animate__rollIn {
+  0% {
+    color: #11998e; }
+  25% {
+    color: #9be15d; }
+  50% {
+    color: #38ef7d; }
+  100% {
+    color: #00e3ae; } }
+
+#productos .row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+#productos .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+#productos #carouselExampleControls {
+  justify-content: center;
+  justify-self: center;
+  margin-right: auto;
+  margin-left: auto; }
+
+#quienessomos .quienessomos__titulo {
+  color: #34ebab;
+  font-family: normal "PT Serif", serif;
+  font-size: 35px;
+  letter-spacing: 1.5px; }
+  #quienessomos .quienessomos__titulo:hover {
+    background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    background-size: 100%;
+    transition: 1s;
+    transform: scale(1.3);
+    color: #ffffff; }
+
+#quienessomos .quienessomos__parrafo {
+  font-family: normal "Roboto Slab", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+  height: 270px;
+  width: 350px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  border: 5px; }
+
+#quienessomos .container-fluid {
+  background-color: linear-gradient(60 deg, to top, #96deda 0%, #50c9c3 100%); }
+
+#contacto .contacto__titulo {
+  color: #34ebab;
+  font-family: normal "PT Serif", serif;
+  font-size: 35px;
+  letter-spacing: 1.5px; }
+  #contacto .contacto__titulo:hover {
+    background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    background-size: 100%;
+    transition: 1s;
+    transform: scale(1.3);
+    color: #ffffff; }
+
+#contacto .contacto__formulario {
+  font-family: normal "Roboto Slab", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #0a0a0a;
+  height: 215px;
+  width: 447px;
+  text-align: justify;
+  font-style: italic;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border: 20px;
+  margin: 10px; }
+
+#contacto .container-fluid {
+  background-color: linear-gradient(60 deg, to top, #96deda 0%, #50c9c3 100%); }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-areas: "quienessomos contacto";
+  /*grid-template-rows: 600px;*/
+  grid-column-gap: 15px;
+  margin: 10px;
+  align-items: stretch;
+  justify-items: center;
+  justify-content: space-around;
+  align-content: space-evenly; }
+  .grid2 #quienessomos {
+    grid-area: quienessomos;
+    justify-self: stretch;
+    align-self: stretch; }
+  .grid2 #contacto {
+    grid-area: contacto;
+    justify-self: stretch;
+    align-self: stretch; }
+
+/*Animacion*/
+#animacion {
+  animation-name: parallax;
+  animation: parallax;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 4s; }
+
+@keyframes parallax {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#animacion3 {
+  animation-name: parallax;
+  animation: parallax;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s; }
+
+.footer {
+  background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background-size: 100% 100%;
+  margin: 10px !important; }
+  .footer ol li {
+    list-style: none;
+    list-style-position: outside;
+    color: white;
+    text-decoration: none; }
+  .footer .footer__estilo {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .footer .footer__estilo2 {
+    color: #ffffff;
+    font-family: bold "Roboto Slab", serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none; }
+  .footer div {
+    display: inline-block;
+    width: 30%; }
+
+/*Pagina Productos*/
+#row3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+  align-items: flex-center;
+  padding-right: 10px;
+  padding-left: 5px; }
+  #row3 #productosMasVendidos {
+    color: #0a0a0a;
+    font-family: normal "Roboto Slab", serif;
+    font-size: 30px;
+    border-style: ridge;
+    border-color: #34ebab;
+    border-width: 10px;
+    text-align: center;
+    line-height: none;
+    height: 550px !important;
+    width: 510px;
+    margin: 2px;
+    letter-spacing: 1px;
+    display: inline-block;
+    justify-content: center;
+    padding: 3px; }
+  #row3 em {
+    color: black;
+    font-family: "Roboto Slab", serif !important;
+    font-size: 40px;
+    font-weight: bold; }
+
+/*Pagina Quienes Somos*/
+.quienessomos2 .quienessomos__parrafo2 {
+  text-align: justify;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 200px;
+  width: 675px;
+  margin: 10px;
+  border: 10px;
+  background: linear-gradient(60 deg, to top, #96deda 0%, #50c9c3 100%); }
+
+#flexQS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+/*Pagina Contacto*/
